@@ -21,15 +21,18 @@ public static void main(String[] args){
 	do
 	{
 	
-	Wrestler players_wrestlers[]={Wrestler1,Wrestler2,Wrestler3,Wrestler7};
+	Wrestler wrestlers[]={Wrestler1,Wrestler2,Wrestler3,Wrestler7,Wrestler4,Wrestler5,Wrestler6,Wrestler8};
 	int random1 = (int)(Math.random()*4);
 	
-	Wrestler opponents_wrestlers[]={Wrestler4,Wrestler5,Wrestler6,Wrestler8};
+	
 	int random2 = (int)(Math.random()*4);
+	if(random1==random2){
+		System.out.println("Same Cards Try Again");
+		continue;}
 	
-	Wrestler temp1=players_wrestlers[random1];
+	Wrestler temp1=wrestlers[random1];
 	
-	Wrestler temp2=opponents_wrestlers[random2];
+	Wrestler temp2=wrestlers[random2];
 	
 	System.out.println(temp1.toString());
 	
